@@ -25,5 +25,27 @@ The `src` folder contains all of our TypeScript resources.
 
 When we run `npm start` now in our folder the app starts up at `localhost:3000`. 
 
+## Clean up
 
+There are some files we won't need - the favicon and other react PNGs and the content of the `App.tsx`. 
 
+One thing that we will need and is not yet there is [Material UI](). We will use predefined Material UI components for the styling of our app. We can add the dependency by running 
+
+`npm install @mui/material @emotion/react @emotion/styled`
+
+in our Terminal. When we do that some lines for the new dependcies are added to our `package.json`
+
+```
+{
+  "name": "good-bad-words",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.6",
+    ...
+  }
+  ...
+}
+```
